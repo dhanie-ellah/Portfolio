@@ -1,0 +1,530 @@
+/* VARIABLES */
+:root{
+    --primary-color: #B1CBF5;
+    --gray: #BFBFBF;
+}
+
+
+/* GENERAL STYLING */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+main{
+    max-width: 85%;
+    margin: auto;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+
+/* NAVBAR */
+header{
+    background-color: var(--primary-color);
+}
+
+div.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+div.navbar h1{
+    color: black;
+}
+
+div.navbar nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.navbar nav a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+div.navbar nav a:hover{
+    border-bottom: 2px solid black ;
+}
+
+div.navbar i{
+    display: none;
+    color: black;
+}
+
+/* HOME */
+section.home{
+    display: flex;
+    height: 100vh;
+}
+
+div.home-text-wrapper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+div.home-text-wrapper .home-text p.hello{
+    font-weight: 700;
+}
+
+div.home-text-wrapper .home-text h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+div.home-text-wrapper .home-text p.description{
+    color: var(--gray);
+    margin-bottom: 25px;
+}
+
+div.home-text-wrapper .home-text a{
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+div.home-image-wrapper{
+    width: 50%;
+    padding: 25px;
+}
+
+div.home-image-wrapper img{
+    width: 100%;
+}
+/* ABOUT */
+section.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.about div.about-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.about div.about-header i{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+section.about div.about-header h1{
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+section.about div.about-img-wrapper{
+    width: 20%;
+    margin: auto;
+}
+
+section.about div.about-img-wrapper img{
+    width: 100%;
+}
+
+section.about div.about-text-wrapper{
+    width: 75%;
+    margin: auto;
+}
+
+/* PROJECTS */
+.project-content{
+    width: 100%;
+}
+
+section.project div.project-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+section.project div.project-header i{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+section.project div.project-header h1{
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+div.project-details{
+    width: 75%;
+    margin: auto;
+}
+
+div.project-details .projects-outlined{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+div.project-details .projects-outlined a{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+/* .project-even .image-container{
+    order: 2;
+}
+
+.project-even .text-container{
+    order: 1;
+} */
+
+div.project-details .image-container{
+    width: 50%;
+}
+
+div.project-details .project-even{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* div.project-details .project-even .text-container{
+    margin-right: -100px;
+} */
+
+div.project-details .image-container img{
+    width: 100%;
+}
+
+div.project-details .text-container{
+    width: 80%;
+    height: fit-content;
+    position: relative;
+    margin-left: -75px;
+    background-color: var(--primary-color);
+    padding: 10px 25px;
+    align-self: center;
+}
+
+div.project-details .text-container h1{
+    color: black;
+    text-align: center;
+}
+
+div.project-details .text-container p{
+    color: black;
+}
+
+.project-content a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* CONTACT */
+section.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.contact-content{
+    width: 100%;
+}
+
+section.contact div.contact-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+section.contact div.contact-header i{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+section.contact div.contact-header h1{
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+section.contact div.contact-info{
+    width: 100%;
+    display: flex;
+    margin-bottom: 75px;
+}
+
+section.contact div.contact-info div.contact-links{
+    width: 50%;
+    margin: auto;
+    padding-left: 200px;
+}
+
+div.contact-links .tel-wrapper,
+div.contact-links .email-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div.contact-links .tel-wrapper i,
+div.contact-links .email-wrapper i{
+    font-size: 25px;
+    color: black;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+div.contact-links .tel-wrapper a,
+div.contact-links .email-wrapper a{
+    text-decoration: none;
+}
+
+div.contact-links .social-media-icons{
+    display: flex;
+    gap: 20px;
+}
+
+div.contact-links .social-media-icons img{
+    width: 45px;
+}
+
+section.contact div.contact-info form{
+    width: 50%;
+}
+
+form input,
+form textarea{
+    width: 55%;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form input[type="submit"]{
+    width: 100px;
+    background-color: var(--primary-color);
+    color: black;
+    cursor: pointer;
+}
+
+section.contact .contact-content p{
+    text-align: center;
+    font-size: 12px;
+}
+
+section.contact .contact-content p a{
+    color: var(--primary-color);
+    text-decoration: none;
+    padding-top: 200px;
+}
+
+@media (max-width: 900px){
+    /* NAVBAR */
+    div.navbar h1{
+    font-size: 15px;
+    }
+
+    div.navbar nav{
+        display: none;
+    }
+
+    div.navbar i{
+        display: block;
+    }
+
+    .responsive{
+        display: block;
+        background-color: white;
+        width: 85%;
+        margin: auto;
+        height: fit-content;
+        position: fixed;
+        top: 100px;
+        padding: 15px;
+        border-radius: 15px;
+        text-align: center;
+        bottom: 25px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .responsive a{
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    /* HOME */
+    section.home{
+        display: flex;
+        height: fit-content;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+    div.home-text-wrapper{
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    div.home-text-wrapper .home-text{
+        margin: auto;
+    }
+
+    div.home-text-wrapper .home-text h2{
+        font-size: 15px;
+    }
+
+    div.home-text-wrapper p{
+        font-size: 8px;
+    }
+
+    div.home-text-wrapper a{
+        font-size: 8px;
+    }
+    
+    div.home-image-wrapper{
+        width: 50%;
+        margin: auto;
+        order: 1;
+        padding: 25px;
+    }
+    
+    div.home-image-wrapper img{
+        width: 100%;
+    }
+
+    /* ABOUT */
+    section.about{
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+
+    .about-text-wrapper p{
+        font-size: 8px;
+    }
+    
+    /* PROJECTS */
+    div.project-details .projects-outlined a{
+        flex-wrap: wrap;
+    }
+    
+    div.project-details .image-container{
+        width: 85%;
+        margin: auto;
+    }
+    
+    div.project-details .text-container{
+        width: 75%;
+        margin: auto;
+        margin-top: -75px;
+    }
+    
+    div.project-details .text-container h1{
+        font-size: 15px;
+    }
+    
+    div.project-details .text-container p{
+        font-size: 8px;
+    }
+
+    .project-content a{
+        font-size: 7px;
+    }
+
+    /* CONTACT */
+    section.contact{
+        height: fit-content;
+    }
+    
+    section.contact div.contact-info{
+        flex-wrap: wrap;
+    }
+    
+    section.contact div.contact-info div.contact-links{
+        width: 100%;
+        margin: auto;
+        padding-left: 0;
+    }
+    
+    div.contact-links .tel-wrapper i,
+    div.contact-links .email-wrapper i{
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    div.contact-links .tel-wrapper a,
+    div.contact-links .email-wrapper a{
+        font-size: 10px;
+    }
+    
+    div.contact-links .social-media-icons{
+        gap: 15px;
+    }
+    
+    div.contact-links .social-media-icons img{
+        width: 35px;
+    }
+    
+    section.contact div.contact-info form{
+        width: 100%;
+    }
+    
+    form input,
+    form textarea{
+        width: 90%;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    
+    form input[type="submit"]{
+        width: 80px;
+        font-size: 10px;
+    }
+
+    form input::placeholder{
+        font-size: 10px;
+    }
+    
+    section.contact .contact-content p{
+        font-size: 10px;
+    }
+}
