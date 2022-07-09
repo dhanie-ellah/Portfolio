@@ -246,6 +246,11 @@ div.project-details .text-container p{
 
 .project-content a{
     text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.project-content a:hover{
     color: var(--primary-color);
 }
 
@@ -370,25 +375,27 @@ section.contact .contact-content p a{
         display: block;
     }
 
-    .responsive{
+    div.navbar .responsive{
         display: block;
-        background-color: white;
-        width: 85%;
-        margin: auto;
-        height: fit-content;
-        position: fixed;
-        top: 100px;
+        background-color: var(--primary-color);
+        width: 100%;
+        position: absolute;
+        top: 40px;
         padding: 15px;
-        border-radius: 15px;
         text-align: center;
-        bottom: 25px;
-        left: 15px;
-        right: 15px;
+        right: 0px;
     }
 
     .responsive a{
+        width: 15%;
+        margin: auto;
         display: block;
         margin-bottom: 25px;
+        border-bottom: 3px solid transparent;
+    }
+
+    .responsive a:hover{
+        border-bottom: 3px solid black;
     }
 
     /* HOME */
@@ -414,11 +421,11 @@ section.contact .contact-content p a{
     }
 
     div.home-text-wrapper p{
-        font-size: 8px;
+        font-size: 10px;
     }
 
     div.home-text-wrapper a{
-        font-size: 8px;
+        font-size: 10px;
     }
     
     div.home-image-wrapper{
@@ -438,24 +445,52 @@ section.contact .contact-content p a{
         margin-bottom: 50px;
     }
 
+    section.about div.about-header i{
+        font-size: 20px;
+    }
+    
+    section.about div.about-header h1{
+        font-size: 25px;
+    }
+
+    section.about div.about-img-wrapper{
+        width: 45%;
+    }
+
+    section.about div.about-text-wrapper{
+        width: 100%;
+    }
+
     .about-text-wrapper p{
-        font-size: 8px;
+        font-size: 10px;
     }
     
     /* PROJECTS */
+    div.project-details{
+        width: 100%;
+    }
+
+    section.project div.project-header i{
+        font-size: 20px;
+    }
+    
+    section.project div.project-header h1{
+        font-size: 25px;
+    }
+
     div.project-details .projects-outlined a{
         flex-wrap: wrap;
     }
     
     div.project-details .image-container{
-        width: 85%;
+        width: 100%;
         margin: auto;
     }
     
     div.project-details .text-container{
-        width: 75%;
+        width: 90%;
         margin: auto;
-        margin-top: -75px;
+        margin-top: -50px;
     }
     
     div.project-details .text-container h1{
@@ -463,16 +498,24 @@ section.contact .contact-content p a{
     }
     
     div.project-details .text-container p{
-        font-size: 8px;
+        font-size: 10px;
     }
 
-    .project-content a{
-        font-size: 7px;
+    section.project .project-content a{
+        font-size: 8px;
     }
 
     /* CONTACT */
     section.contact{
         height: fit-content;
+    }
+
+    section.contact div.contact-header i{
+        font-size: 20px;
+    }
+    
+    section.contact div.contact-header h1{
+        font-size: 25px;
     }
     
     section.contact div.contact-info{

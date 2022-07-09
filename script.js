@@ -1,9 +1,9 @@
 let navbar = document.getElementById("navbar")
 
 function responsive(){
-    if (navbar.className == "navbar"){
+    if (navbar.className === "links"){
         navbar.className = "responsive";
     } else{
-        navbar.className = "navbar";
+        navbar.className = "links";
     }
 }
